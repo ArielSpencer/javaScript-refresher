@@ -30,3 +30,22 @@ if (nota >= 90) {
 } else {
   console.log("Nota: C, reprovou!");
 }
+
+// 5. Loops
+let numeros = [1, 2, 3, 4, 5];
+// For loop
+for (let i = 0; i < numeros.length; i++) {
+  console.log(`Número ${numeros[i]}`);
+}
+
+// For...of
+for (let num of numeros) {
+  console.log(`For...of: ${num}`);
+}
+
+// While
+let contador = 0;
+while (contador < 3) {
+  console.log(`Contando: ${contador}`);
+  contador++;
+}
