@@ -49,3 +49,19 @@ while (contador < 3) {
   console.log(`Contando: ${contador}`);
   contador++;
 }
+
+// 6. Arrays
+let frutas = ["Maçã Verde", "Banana", "Uva"];
+frutas.push("Jaca"); // Adiciona
+frutas.pop(); // Remover o último
+console.log(`Lista de frutas: ${frutas.join(", ")}`);
+
+// 7. Objetos
+let pessoa = {
+  nome: "Ariel",
+  idade: 28,
+  falar: function () {
+    return `Nome: ${this.nome}. Idade: ${this.idade} anos.`;
+  },
+};
+console.log(pessoa.falar());
