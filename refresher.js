@@ -74,3 +74,32 @@ console.log(mensagem.includes("café")); // Verifica se contém "café"
 // 9. Manipulação de Datas
 let dataAtual = new Date();
 console.log(`Hoje é: ${dataAtual.toLocaleDateString()}`);
+
+// 10. Promises e Async/Await
+const promessa = new Promise((resolve, reject) => {
+  let sucesso = true; // se false = reject
+  setTimeout(() => {
+    if (sucesso) {
+      resolve("Promessa cumprida!");
+    } else {
+      reject("Promessa rejeitada.");
+    }
+  }, 1000);
+});
+
+promessa
+  .then((mensagem) => console.log(mensagem))
+  .catch((erro) => console.error(erro));
+
+// Async/await
+async function executarPromessa() {
+  try {
+    let resultado = await promessa;
+    console.log(`Async/Await: ${resultado}`);
+  } catch (erro) {
+    console.error(`Async/Await: ${erro}`);
+  }
+}
+executarPromessa();
+
+console.log("Fim! 🚀");
