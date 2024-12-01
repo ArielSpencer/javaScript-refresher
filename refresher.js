@@ -65,3 +65,12 @@ let pessoa = {
   },
 };
 console.log(pessoa.falar());
+
+// 8. Manipulação de Strings
+let mensagem = "O café está pronto!";
+console.log(mensagem.toUpperCase()); // Tudo maiúsculo
+console.log(mensagem.includes("café")); // Verifica se contém "café"
+
+// 9. Manipulação de Datas
+let dataAtual = new Date();
+console.log(`Hoje é: ${dataAtual.toLocaleDateString()}`);
